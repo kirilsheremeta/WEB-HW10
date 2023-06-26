@@ -1,0 +1,87 @@
+body {
+  background-color: #fefae0;
+}
+
+.quote span.text {
+    display: block;
+    margin-bottom: 5px;
+    font-size: large;
+    font-style: italic;
+}
+
+.quote {
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px #333333;
+    background-color: #fefae0;
+}
+
+.quote .tags {
+    margin-top: 10px;
+}
+
+p {
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+}
+}
+
+.tag {
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: white;
+    font-size: small;
+    background-color: #d4a373;
+}
+
+
+.quote small.author {
+    font-weight: bold;
+    color: #d4a373;
+}
+
+.btn-info {
+    --bs-btn-color: #000;
+    --bs-btn-bg: #f5a056;
+    --bs-btn-border-color: #f5a056;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #b7b7a4;
+    --bs-btn-hover-border-color: #ddbea9;
+    --bs-btn-focus-shadow-rgb: 11,172,204;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #b7b7a4;
+    --bs-btn-active-border-color: #ddbea9;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #000;
+    --bs-btn-disabled-bg: #6d6875;
+    --bs-btn-disabled-border-color: #6d6875;
+}
+
+.pager {
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.pager li {
+    display: inline;
+}
+
+.pager li>a, .pager li>span {
+    display: inline-block;
+    padding: 5px 14px;
+    background-color: #f1faee;
+    border: 1px solid #cccccc;
+    border-radius: 15px;
+}
+
+.pager .next>a, .pager .next>span {
+    float: right;
+}
+
+.disabled {
+    color: #333333
+    cursor: not_allowed
+}

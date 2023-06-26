@@ -1,0 +1,46 @@
+{%extends "super_quotes/base.html"%}
+
+{% block content %}
+<h3>Registration</h3>
+
+{%if form.errors %}
+<span class="alert alert-danger" role="alert">{{form.non_field_errors}}</span>
+{% endif %}
+
+
+<form method="post">
+    {% csrf_token %}
+    <div class="row mb-3 col-md-6">
+        <label>Username:</label>
+        {{form.username}}
+        <span>{{form.errors.username}}</span>
+    </div>
+    <div class="row mb-3 col-md-6">
+        <label>Name:</label>
+        {{form.first_name}}
+        <span>{{form.errors.first_name}}</span>
+    </div>
+    <div class="row mb-3 col-md-6">
+        <label>Surname:</label>
+        {{form.last_name}}
+        <span>{{form.errors.last_name}}</span>
+    </div>
+    <div class="row mb-3 col-md-6">
+        <label>Email:</label>
+        {{form.email}}
+        <span>{{form.errors.email}}</span>
+    </div>
+    <div class="row mb-3 col-md-6">
+        <label>Password:</label>
+        {{form.password1}}
+        <span>{{form.errors.password1}}</span>
+    </div>
+    <div class="row mb-3 col-md-6">
+        <label>Confirm password:</label>
+        {{form.password2}}
+        <span>{{form.errors.password2}}</span>
+    </div>
+    <button type="submit" class="btn btn-outline-warning">Retry</button>
+    <button type="submit" class="btn btn-outline-info">Submit</button>
+</form>
+{% endblock %}
